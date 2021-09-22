@@ -5,8 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geométricas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
+<style>
+  .container-sm {
+    background-color: rgb(209, 209, 209);
+  }
+</style>
 <body>
+    <header class="text-center mt-5">
+        <h1>
+          Figuras geométricas
+        </h1>
+        <p>Este es el primer taller del curso práctico de JavaScript</p>
+      </header>
+      
+      <div class="container-sm">
+        <div class="row">
+          <div class="col-md-4 border">
+            <h2>Cuadrado</h2>
+            <div class="mb-3">
+              <label for="InputCuadrado" for="exampleFormControlInput1" class="form-label"> Escribe cuánto mide cada lado de tu cuadrado:</label>
+              <input type="number" class="form-control" id="InputCuadrado" >
+              <button type="button" class="btn btn-primary mt-2" onclick="calcularPerimetroCuadrado()">
+                Calcular el perímetro
+              </button>
+              <button type="button" class="btn btn-primary mt-2" onclick="calcularAreaCuadrado()">
+                Calcular el área
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4 border">
+            <h2>Triángulo</h2>
+            <form>
+              <label for="InputTriangulo1">A: </label>
+              <input id="InputTriangulo1" type="number" class="form-control" />
+              <label for="InputTriangulo2">B: </label>
+              <input id="InputTriangulo2" type="number" class="form-control" />
+              <label for="InputTriangulo3">BASE: </label>
+              <input id="InputTriangulo3" type="number" class="form-control" />
+              <label for="InputTriangulo4">ALTURA: </label>
+              <input id="InputTriangulo4" type="number" class="form-control" />
+              <button type="button" class="btn btn-primary mt-2 mb-2" onclick="CalcularPerimetroTriangulo()">Calcular el perimetro</button>
+              <button type="button" class="btn btn-primary mt-2 mb-2" onclick="CalcularAreaTriangulo()">Calcular el area</button>
+            </form>
+
+          </div>
+          <div class="col-md-4 border">
+            <h2>Circulo</h2>
+            <form>
+              <label for="InputCirculo">
+                Escribe cuánto mide cada lado de tu circulo:
+              </label>
+              <input type="number" id="InputCirculo" class="form-control"  />
+              <button type="button" class="btn btn-primary mt-2 mb-2" onclick="calcularPerimetroCirculo()">
+                Calcular el perímetro
+              </button>
+              <button type="button" class="btn btn-primary mt-2 mb-2" onclick="calcularAreaCirculo()">
+                Calcular el área
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
     <script src="./figuras.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
